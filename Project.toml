@@ -1,0 +1,4 @@
+name = "sky130_fd_pr"
+uuid = "700a3384-d7d2-40b4-bfbe-e566abba0086"
+authors = ["SkyWater PDK Authors"]
+version = "0.20.1"
