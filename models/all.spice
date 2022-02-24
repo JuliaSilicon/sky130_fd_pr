@@ -1,6 +1,7 @@
 * SKY130 Spice File.
 .option scale=1.0u
 .include "parameters/lod.spice"
+.include "parameters/critical.spice"
 .param
 + lv_dlc_rotweak = .00e-9
 + lvhvt_dlc_rotweak = .00e-9
@@ -28,6 +29,28 @@
 + sky130_fd_pr__special_pfet_pass_lowleakage__dlc_rotweak = lv_dlc_rotweak
 + sky130_fd_bs_flash__special_sonosfet_star__dlc_rotweak = hv_dlc_rotweak
 + sky130_fd_bs_flash__special_sonosfet_original__dlc_rotweak = hv_dlc_rotweak
++ sky130_fd_pr__model__parasitic__diode_ps2nw__ajunction_mult = '6.93889e-18*well_diode*well_diode+4.81850e-02*well_diode+9.82860e-01'
++ sky130_fd_pr__model__parasitic__diode_ps2nw__pjunction_mult = '6.93889e-18*well_diode*well_diode+1.80650e-02*well_diode+9.89540e-01'
++ sky130_fd_pr__model__parasitic__diode_ps2dn__ajunction_mult = '-4.75000e-04*well_diode*well_diode+6.70500e-02*well_diode+9.85800e-01'
++ sky130_fd_pr__model__parasitic__diode_ps2dn__pjunction_mult = '3.98750e-04*well_diode*well_diode+7.84800e-02*well_diode+1.01160e+00'
++ sky130_fd_pr__model__parasitic__diode_pw2dn__ajunction_mult = '1.87500e-04*well_diode*well_diode+7.37500e-02*well_diode+9.82000e-01'
++ sky130_fd_pr__model__parasitic__diode_pw2dn__pjunction_mult = '-7.79688e-04*well_diode*well_diode+1.78588e-02*well_diode+9.63040e-01'
++ sky130_fd_pr__nfet_01v8__ajunction_mult = '-1.87500e-06*lvn_diode*lvn_diode+5.53750e-02*lvn_diode+9.95430e-01'
++ sky130_fd_pr__nfet_01v8__pjunction_mult = '-1.25000e-06*lvn_diode*lvn_diode+5.67550e-02*lvn_diode+1.02040e+00'
++ sky130_fd_pr__pfet_01v8__ajunction_mult = '-3.12500e-07*lvp_diode*lvp_diode+2.36612e-02*lvp_diode+9.96260e-01'
++ sky130_fd_pr__pfet_01v8__pjunction_mult = '2.18750e-06*lvp_diode*lvp_diode+2.37662e-02*lvp_diode+1.00090e+00'
++ sky130_fd_pr__pfet_01v8_hvt__ajunction_mult = '-6.25000e-07*lvp_diode*lvp_diode+2.33625e-02*lvp_diode+9.83660e-01'
++ sky130_fd_pr__pfet_01v8_hvt__pjunction_mult = '-6.25000e-07*lvp_diode*lvp_diode+2.44275e-02*lvp_diode+1.02860e+00'
++ sky130_fd_pr__nfet_g5v0d10v5__ajunction_mult = '9.37500e-07*hvn_diode*hvn_diode+4.43837e-02*hvn_diode+9.95050e-01'
++ sky130_fd_pr__nfet_g5v0d10v5__pjunction_mult = '1.87500e-06*hvn_diode*hvn_diode+5.91425e-02*hvn_diode+1.01440e+00'
++ sky130_fd_pr__pfet_g5v0d10v5__ajunction_mult = '-2.50000e-06*hvp_diode*hvp_diode+1.81850e-02*hvp_diode+1.00500e+00'
++ sky130_fd_pr__pfet_g5v0d10v5__pjunction_mult = '-1.25000e-06*hvp_diode*hvp_diode+1.61550e-02*hvp_diode+1.00900e+00'
++ sky130_fd_pr__nfet_05v0_nvt__ajunction_mult = '-1.87500e-06*hvn_diode*hvn_diode+1.02953e-01*hvn_diode+9.76020e-01'
++ sky130_fd_pr__nfet_05v0_nvt__pjunction_mult = '-3.12500e-07*hvn_diode*hvn_diode+5.06762e-02*hvn_diode+1.04370e+00'
++ sky130_fd_pr__nfet_01v8_lvt__ajunction_mult = '-2.59375e-05*lvn_diode*lvn_diode+4.38787e-02*lvn_diode+1.00040e+00'
++ sky130_fd_pr__nfet_01v8_lvt__pjunction_mult = '4.43125e-04*lvn_diode*lvn_diode+3.72125e-02*lvn_diode+8.91760e-01'
++ sky130_fd_pr__pfet_01v8_lvt__ajunction_mult = '-3.12500e-07*lvp_diode*lvp_diode+2.36612e-02*lvp_diode+9.96260e-01'
++ sky130_fd_pr__pfet_01v8_lvt__pjunction_mult = '-1.57187e-04*lvp_diode*lvp_diode+2.31288e-02*lvp_diode+1.00090e+00'
 + sonos_eeol_dlc_rotweak = hv_dlc_rotweak
 + sonos_peol_dlc_rotweak = hv_dlc_rotweak
 * include all individual diode models
