@@ -15,7 +15,7 @@
 * SKY130 Spice File.
 .subckt  sky130_fd_pr__res_generic_pd t1 t2 b
 + w=1 l=1
-r0 t1 t2 sky130_fd_pr__res_generic_pd w = {w} l = {l}
+r0 t1 t2 sky130_fd_pr__res_generic_pd_mod w = {w} l = {l}
 d0 t1 b sky130_fd_pr__model__parasitic__diode_ps2nw area = 'w*l*0.5' pj = 'w+l'
 d1 t2 b sky130_fd_pr__model__parasitic__diode_ps2nw area = 'w*l*0.5' pj = 'w+l'
 .ends sky130_fd_pr__res_generic_pd
